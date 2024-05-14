@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  </head>
+  <body>
+    <div class="main">
+      <video src="Hud_R.mp4" autoplay muted loop="true"></video>
+      <div class="header">
+        <h1>Music player</h1>
+        <div class="icon">
+          <a href="#"><i class='bx bxl-instagram'></i></a>
+          <a href="https://github.com/"><i class='bx bxl-github' ></i></a>
+          <a href="#"><i class='bx bxl-facebook'></i></a>
+        </div>
+      </div>
+      <div class="col">
+        <div id="player-container">
+          <div id="song-info">
+            <img
+              id="song-image"
+              src="image/songbackground.jpeg"
+              alt="Song Image"
+            />
+            <h2 id="song-title">Song Title</h2>
+            <div id="progress-container">
+              <div id="progress-bar"></div>
+            </div>
+            <div id="timer">0:00 / 0:00</div>
+            <button class="btn" id="prev-button">Previous</button>
+            <button class="btn" id="play-pause-button">Play/Pause</button>
+            <button class="btn" id="next-button">Next</button>
+
+          </div>
+          <!-- <div id="custom-controls">
+                    
+                </div> -->
+        </div>
+        <div class="playlist-detail">
+          <ul id="playlist">
+            <input type="text" id="search" placeholder="Search here....." />
+            <hr>
+            <!-- <p>on and on</p> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <audio id="audio"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
